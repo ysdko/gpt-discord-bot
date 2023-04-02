@@ -59,7 +59,7 @@ async def on_message(message):
         question = message.clean_content.replace(bot_name, '')
 
         # ChatGPTクラスを使って回答を生成する
-        api = ChatGPT(system_setting="あなたは競馬の専門家になりきってください")
+        api = ChatGPT(system_setting="あなたは優秀な作家になりきってください。")
         api.input_message(question)
 
         # 生成した回答を取得する
